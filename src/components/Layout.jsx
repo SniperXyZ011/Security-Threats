@@ -23,8 +23,8 @@ const Layout = ({ children, activeTab, setActiveTab, navItems }) => {
                                     key={item.id}
                                     onClick={() => setActiveTab(item.id)}
                                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${activeTab === item.id
-                                            ? "bg-cyan-500/10 text-cyan-400 border border-cyan-500/20"
-                                            : "text-slate-400 hover:text-white hover:bg-slate-800"
+                                        ? "bg-cyan-500/10 text-cyan-400 border border-cyan-500/20"
+                                        : "text-slate-400 hover:text-white hover:bg-slate-800"
                                         }`}
                                 >
                                     {item.label}
@@ -53,8 +53,8 @@ const Layout = ({ children, activeTab, setActiveTab, navItems }) => {
                                         setIsMenuOpen(false);
                                     }}
                                     className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${activeTab === item.id
-                                            ? "bg-slate-800 text-cyan-400"
-                                            : "text-slate-400 hover:text-white hover:bg-slate-800"
+                                        ? "bg-slate-800 text-cyan-400"
+                                        : "text-slate-400 hover:text-white hover:bg-slate-800"
                                         }`}
                                 >
                                     {item.label}
@@ -78,6 +78,9 @@ const Layout = ({ children, activeTab, setActiveTab, navItems }) => {
                     </p>
                     <p className="text-slate-600 text-xs mt-2">
                         Secure your data. Update your passwords. Trust no one.
+                    </p>
+                    <p className="text-slate-600 text-xs mt-2">
+                        build by <a href="https://github.com/SniperXyZ011" target="_blank" rel="noopener noreferrer" className="text-cyan-500 hover:text-cyan-400">SniperXyZ011</a>
                     </p>
                 </div>
             </footer>
